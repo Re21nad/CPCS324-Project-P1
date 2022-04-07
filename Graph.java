@@ -79,14 +79,5 @@ Vertex[] adjvertices;
        return false;}
  //******************************************* End isConnected() *********************************************************
  
- //******************************************* Start printGraph() *********************************************************
-  public void printGraph() {
-      //print if the graph is directed or not 
-        String graphType = isDigraph ? "Directed" : "Undirected";
-        System.out.println(graphType + "Graph with " + veticesNo + " verticies ,and " + edgeNo + " edges");
-        for (Vertex v : adjvertices) {
-            for (Edge e : v.adjlist) {
-                System.out.println(e.source.label + "->" + e.target.label + "(w=" + e.weight + ")");
-            }}}
-  //******************************************* End printGraph() *********************************************************
+ 
 }
